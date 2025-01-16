@@ -130,8 +130,8 @@ echo $newString;
 <!-- Q13.. -->
 <?php
 $str = '0000657022.24';
-$str = ltrim($str, "0"); 
-echo $str;
+$trimmed = str_replace("0", "", $str);
+echo $trimmed;
 ?>
 <br><br>
 
