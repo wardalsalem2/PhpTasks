@@ -21,10 +21,10 @@ else {
 $temp = 27;
 function checkseson ( $temp) {
 if ($temp >20 ){
-    echo "winter";
+    echo " It's a winter sesson";
 }
 else {
-    echo "summer";
+    echo "It's a summer sesson";
 }
 }
 checkseson ( $temp)
@@ -35,7 +35,7 @@ checkseson ( $temp)
 <?php
 $int1=2;
 $int2= 2;
-if ($int1 == $int2){
+if($int1 === $int2){
 echo ($int1 + $int2)*3;
 }
 else {
@@ -48,8 +48,8 @@ echo $int1 + $int2;
 <?php
 $int1=10;
 $int2= 10;
-$sum=$int1+$int2;
-if($sum == 30) {
+$sum = $int1 + $int2 ;
+if($sum === 30) {
     echo $sum;
 }
 else {
@@ -61,10 +61,10 @@ else {
 <!-- Q5 -->
 <?php
 $int=20;
-if( $int>0 && $int % 3 == 0){
-    echo "true";
+if( $int > 0 && $int % 3 == 0){
+    echo "true, it's a multiple of 3";
 }else{
-    echo "false";
+    echo "false, it's not a multiple of 3";
 }
 ?>
 <br>
@@ -73,7 +73,7 @@ if( $int>0 && $int % 3 == 0){
 <?php
 $int= 50;
 if( $int >= 20 && $int <=50){
-    echo "true";
+echo "true";
 }
 else {
 echo "false";   
@@ -90,7 +90,7 @@ echo $numbers;
 
 <!-- Q8.. -->
 <?php
-$bill=50;
+$bill = 50;
 if($bill <= 50){
     echo($bill * 2.5 ) . "JOD";
 }
@@ -117,16 +117,16 @@ $Multiplication = $int1 * $int2;
 $Division = $int1 / $int2;
 $Subtraction = $int1 - $int2;
 
-if ($option == "addition") {
+if ($option === "addition") {
     echo "Addition: " . $Addition . "<br>";
 }
-elseif ($option == "multiplication") {
+elseif ($option === "multiplication") {
     echo "Multiplication: " . $Multiplication . "<br>";
 }
-elseif ($option == "division") {
+elseif ($option === "division") {
     echo "Division: " . $Division . "<br>";
 }
-elseif ($option == "subtraction") {
+elseif ($option === "subtraction") {
     echo "Subtraction: " . $Subtraction . "<br>";
 } else {
     echo "Invalid operation.";
@@ -139,7 +139,7 @@ elseif ($option == "subtraction") {
 <?php
 $age = 30;
 if($age <= 18){
-    echo "is no eligible to vote’";
+    echo "Not eligible to vote";
 }
 else{
     echo "You can vote";
@@ -164,19 +164,20 @@ else{
 $numb = [60,86,95,63,55,74,79,62,50];
 $average = array_sum($numb) / count($numb);
 
-if ($average >=
-  100) {
-    echo "A";
-} elseif ($average >= 90) {
-    echo "B";
-} elseif ($average >= 80) {
-    echo "C";
-} elseif ($average >= 70) {
-    echo "D";
-} elseif ($average >= 60){
-    echo "F";
+if ($average < 60){
+echo "F";
 }
-
+elseif ($average < 70) {
+echo "D";
+} 
+elseif ($average < 80) {   
+echo "C";
+} 
+elseif ($average < 90) {   
+echo "B";
+} 
+else if ($average <100) {
+echo "A";}
 ?>
 
 
