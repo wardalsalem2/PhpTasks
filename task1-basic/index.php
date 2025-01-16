@@ -65,7 +65,7 @@ echo $username;
 <!-- Q6.. -->
 <?php
 $str1 = 'info@orange.com';   
-echo substr($str1, -3)."\n";  
+echo substr($str1, -3);  
 ?>
 <br><br>
 
@@ -94,9 +94,7 @@ echo $newStr ;
 $str1 = 'dragonboll';
 $str2 = 'dragonball';
 $str_pos = strspn($str1 ^ $str2, "\0");
-printf('First difference between two strings at position %d: "%s" vs "%s"',
-    $str_pos, $str1[$str_pos], $str2[$str_pos]);
-printf("\n");
+echo "First difference between two strings at position $str_pos: \"{$str1[$str_pos]}\" vs \"{$str2[$str_pos]}\"";
 ?>
 <br><br>
 
