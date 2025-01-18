@@ -156,7 +156,28 @@ echo "<br>";
 <br><br>
 
 <!-- Q12 -->
+<?php
+$rows = 4;
+for ($i = 1; $i <= $rows; $i++) {
+    for ($k = $rows; $k > $i; $k--) {
+        echo "&nbsp;";
+    }
+    for ($j = 1; $j <= $i; $j++) {
+        echo chr(64 + $j) . " ";
+    }
+    echo "<br>";
+}
 
+for ($i = $rows - 1; $i >= 1; $i--) {
+    for ($k = $rows; $k > $i; $k--) {
+        echo "&nbsp;";
+    }
+    for ($j = 1; $j <= $i; $j++) {
+        echo chr(64 + $j) . " ";
+    }
+    echo "<br>";
+}
+?>
 
 
 
