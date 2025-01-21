@@ -8,7 +8,7 @@
 <body>
 <?php
 $cookie_name = "user";
-$cookie_value = "GROUB ALSFAHEN";
+$cookie_value = "قروب السفاحين ";
 $cookie_time = time() + (86400 * 30);
 $cookie_delete_time = time() - 3600; 
 setcookie($cookie_name, $cookie_value, $cookie_time, "/");
