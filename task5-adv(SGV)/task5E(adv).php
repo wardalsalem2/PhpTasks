@@ -8,7 +8,7 @@
 <body>
     <h2>  The project name, and script name</h2>
     <?php
-    $projectName = "5.php";
+    $projectName = "task5E(adv).php";
     $scriptName = $_SERVER['SCRIPT_NAME'];
     echo "<p><strong>Project Name:</strong> $projectName</p>";
     echo "<p><strong>Script Name:</strong> $scriptName</p>";
