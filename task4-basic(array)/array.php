@@ -200,7 +200,7 @@ function floorDecimal($number, $precision, $separator) {
 echo floorDecimal(1.155, 2, ".") . "<br>";
 echo floorDecimal(100.25781, 4, ".") . "<br>";
 echo floorDecimal(-2.9636, 3, ".") . "<br>";   
-?>
+?>  
 <br><br>
 
 <!-- Q17 -->
