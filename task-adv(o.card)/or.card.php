@@ -112,7 +112,7 @@ $phones = [
             echo "
             <div class='col-md-4 col-sm-6'>
                 <div class='card h-100 shadow d-flex flex-column'>
-                    <img src='$img' class='card-img-top' style='object-fit: contain; height: 200px; background-color: #f8f9fa;' alt='$brand $name'>
+                    <img src='$img' class='card-img-top' style='object-fit: contain; height: 200px; background-color: #f8f9fa;' alt='#'>
                     <div class='card-body text-center flex-grow-1'>
                         <h5 class='card-title'>$brand $name</h5>
                         <p class='card-text text-primary fw-bold'>$price <span class='text-secondary' style='font-size: 12px;'>with tax</span></p>
