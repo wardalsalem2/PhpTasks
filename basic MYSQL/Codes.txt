@@ -1,0 +1,55 @@
+1-SELECT * FORM employees;
+
+2-SELECT * FROM employees
+ORDER BY Salary DESC;
+
+3-SELECT MAX(Salary) AS HighestSalary
+FROM employees;
+
+4-SELECT MIN(Salary) AS LowestSalary
+FROM employees;
+
+5-SELECT COUNT(id) AS number
+FROM employees;
+
+6-SELECT * FROM employees
+WHERE Salary =400;
+
+7- SELECT * FROM employees 
+WHERE Salary >500;
+
+8-SELECT * FROM employees
+WHERE Salary > 500 AND city = 'Alsalt';
+
+9-SELECT SUM(Salary) AS SumSalaries 
+FROM employees;
+
+10-SELECT * FROM employees
+WHERE EmployeeName LIKE 'A%';
+
+11-SELECT * FROM employees 
+WHERE EmployeeName LIKE '%A';
+
+12-SELECT * FROM employees 
+WHERE City = 'Alsalt' OR City ='Amman' OR City ='Aqaba';
+
+13-SELECT * FROM employees
+WHERE Salary >300 AND Salary < 500;
+
+14-UPDATE employees
+SET Salary = 300
+WHERE id=5;
+
+15-SELECT City, COUNT(*) AS UniqueCity
+FROM employees
+GROUP BY City
+HAVING COUNT(*) = 1;
+
+16-SELECT City, COUNT(*) AS NumberOfEachCity
+FROM employees
+GROUP BY City;
+
+17-SELECT employees.id, departments.DepartmentName
+FROM employees
+INNER JOIN departments
+ON employees.DepartmentID=departments.id;
