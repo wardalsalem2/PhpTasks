@@ -26,7 +26,7 @@ if (isset($_GET['id'])) {
 
 if (isset($_POST['update_user'])) {
     if (isset($_GET['id_new'])) {
-        $id_new = intval($_GET['id_new']);
+        $id_new = $_GET['id_new'];
     }
     $name =$_POST['name'];
     $Address =  $_POST['Address'];
