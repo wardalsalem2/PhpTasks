@@ -1,5 +1,4 @@
 <?php 
-
 include('conn.php')
 ?>
 
@@ -26,11 +25,6 @@ if (isset($_POST['login'])){
     $query = "SELECT * FROM `users` WHERE email = '$email'";
     $result = mysqli_query($conn, $query);
     $user = mysqli_fetch_assoc($result);
-
-
-
-    
-
 
     if ($user) {
         if($bassword == $user["bassword"]) {

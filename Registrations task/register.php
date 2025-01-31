@@ -57,8 +57,9 @@ if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email =  $_POST['email'];
     $bassword = $_POST['bassword'];
-    
     $if = true;
+
+    
     if(!filter_var($email ,   FILTER_VALIDATE_EMAIL)){
         $if = false;
     }
