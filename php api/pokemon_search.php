@@ -29,7 +29,7 @@ if (isset($_POST['pokemon'])) {
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             display: inline-block;
             margin-bottom: 20px;
-            width: 50%;
+            
         }
         input[type="text"] {
             padding: 10px;
@@ -56,7 +56,7 @@ if (isset($_POST['pokemon'])) {
             display: inline-block;
             text-align: center;
             margin-top: 10px;
-            width: 50%;
+            
         }
         .pokemon-card img {
             width: 150px;
